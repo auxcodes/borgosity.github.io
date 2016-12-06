@@ -1,0 +1,259 @@
+/******************************************************************
+	Page Main 
+*******************************************************************/
+html, body {
+  height: 100%;
+  margin: 0;
+}
+ /*Light Switch*/
+label {
+  display: block;
+  height: 25px;
+  width: 100px;
+  background: #eee;
+  text-align: center;
+  font: 14px/25px Helvetica, Arial, sans-serif;
+  margin: 20px 0;
+  position: fixed;
+}
+
+label:hover {
+  background: #696863;
+  color: #95b43b;
+  cursor: pointer;
+}
+
+.check-with-label ~ label:after{
+	content: "light theme";
+}
+
+.check-with-label:hover ~ label:after{
+	content: "dark theme";
+}
+ 
+input#lightswitch {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+}
+
+.check-with-label:checked ~ label {
+  background: #696863;
+  color: #95b43b;
+} 
+
+.check-with-label:checked ~ label:hover {
+  background: #eee;
+  color: #000;
+} 
+
+.check-with-label:checked ~ label:after{
+	content: "dark theme";
+}
+
+.check-with-label:checked:hover ~ label:after{
+	content: "light theme";
+}
+
+/******************************************************************
+	Wrapper
+******************************************************************/
+.main {
+  padding: 20px;
+  width: 100%;
+}
+
+.main h1, h2, h3 {
+  padding: 0 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #008000;
+}
+ 
+.main p {
+  padding: 0 20px;
+  font: 13px/1.5 Helvetica, Arial, sans-serif;
+  color: #505050;
+}
+
+.main a {
+  font: 13px/1.5 Helvetica, Arial, sans-serif;
+  text-decoration:none!important;
+  color: orangered;
+}
+
+input#lightswitch:checked ~ .main  p{
+  color: lightgray;
+}
+
+input#lightswitch:checked ~ .main  a{
+  color: lightskyblue;
+}
+
+input#lightswitch:checked ~ .main h1,
+input#lightswitch:checked ~ .main h2, 
+input#lightswitch:checked ~ .main h3{
+  color: #95b43b;
+}
+
+input#lightswitch:checked ~ .main {
+  background: #403f3c;
+}
+
+/******************************************************************
+	Page Header Paragraphs
+******************************************************************/
+.page-header {
+  width: 50%;
+  margin: auto;
+  padding: 0px 0px 20px 0px;
+  height: 20%;
+}
+ 
+.page-header h1 {
+  text-align: center;
+  font: 70px 'Orbitron', sans-serif;
+  margin-bottom: 20px;
+}
+
+ input#lightswitch:checked ~ .main .page-header h1 {
+  color: #95b43b;
+}
+
+/******************************************************************
+	Menu Div
+******************************************************************/
+.page-menu {
+  width:  50%;
+  padding: 0px 0px 20px 0px;
+  margin: auto;
+  text-align:center;
+}
+.page-menu a {
+  font: 15px/1.5 Helvetica, Arial, sans-serif;
+  text-decoration:none!important;
+	color: inherit; 
+}
+
+/******************************************************************
+	Menu Bar
+******************************************************************/
+.menu-bar .menu-btn{
+	box-shadow:none;
+	background-color:inherit;
+	color:inherit;
+	position: relative;
+}
+.menu-bar .menu-btn:hover{
+	background-color:#eee
+}
+
+/******************************************************************
+	Menu Buttons
+******************************************************************/
+.menu-btn{
+	border:none;
+	display:inline-block;
+	outline:0;
+	padding:8px 16px;
+	vertical-align:middle;
+	text-decoration:none!important;
+	color:#fff;
+	background-color:#fff;
+	text-align:center;
+	cursor:pointer;
+	white-space:nowrap;
+}
+
+input#lightswitch:checked ~ .main .menu-btn a{
+  color: #95b43b; 
+}
+input#lightswitch:checked ~ .main .menu-btn:hover{
+  background-color: #696863;
+}
+
+
+/******************************************************************
+	Menu Dropdown
+******************************************************************/
+.dropdown {
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: inherit;
+    color: inherit;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+}
+
+.dropdown-content a {
+    color: inherit;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #fff
+}
+
+.menu-btn.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+input#lightswitch:checked ~ .main .dropdown-content a{
+  color: #95b43b; 
+  background-color: #403f3c;
+}
+
+input#lightswitch:checked ~ .main .dropdown-content a:hover{
+  color: #95b43b; 
+  background-color: #696863;
+}
+
+input#lightswitch:checked ~ .main .dropdown-content{
+    box-shadow: 0px 8px 16px 0px rgba(149, 180, 59,0.9);
+}
+
+/******************************************************************
+	Page Body Paragraphs
+******************************************************************/
+.page-body {
+  width: 50%;
+  min-height: 400px;
+  margin: 0 auto 30px auto;
+}
+
+/******************************************************************
+	Page Footer Paragraphs
+******************************************************************/
+.page-footer {
+  width: 940px;
+  margin: 0 auto 30px auto;
+}
+ 
+.page-footer p {
+  width: 100%;
+  text-align: center;
+  padding: 0 20px;
+  font: 10px/1.5 Helvetica, Arial, sans-serif;
+}
+
+.page-footer a {
+  font: 10px/1.5 Helvetica, Arial, sans-serif;
+  color: inherit;
+}
+
+input#lightswitch:checked ~ .main .page-footer a {
+  color: #95b43b;
+}
+
+input#lightswitch:checked ~ .main .page-footer p {
+  color: #95b43b;
+}
+
+ 
+
+
+
