@@ -1,9 +1,12 @@
 
 $(document).ready(function(){
 // page templates
-	$("#header").load("header.html"); 
-	$("#menu").load("menu.html"); 
-	$("#footer").load("footer.html");
+	$("#header").load("templates/header.html"); 
+	$("#parentheader").load("../templates/header.html"); 
+	$("#menu").load("templates/menu.html"); 
+	$("#parentmenu").load("../templates/menu.html"); 
+	$("#footer").load("templates/footer.html");
+	$("#parentfooter").load("../templates/footer.html"); 
 	
 // theme memory
 	var checkboxValues = JSON.parse(localStorage.getItem('checkboxValues')) || {};
