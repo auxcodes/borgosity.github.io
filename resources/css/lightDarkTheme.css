@@ -148,7 +148,8 @@ input#lightswitch:checked ~ .main {
 	position: relative;
 }
 .menu-bar .menu-btn:hover{
-	background-color:#ddd
+	background-color:#ddd;
+	box-shadow: 0px 8px 15px -8px rgba(0,0,0,0.5);
 }
 
 /******************************************************************
@@ -173,6 +174,7 @@ input#lightswitch:checked ~ .main .menu-btn a{
 }
 input#lightswitch:checked ~ .main .menu-btn:hover{
 	background-color: #696863;
+	box-shadow: 0px 8px 15px -8px rgba(149, 180, 59,0.9);
 }
 
 
@@ -217,7 +219,7 @@ input#lightswitch:checked ~ .main .dropdown-content a:hover{
 }
 
 input#lightswitch:checked ~ .main .dropdown-content{
-    box-shadow: 0px 8px 16px 0px rgba(149, 180, 59,0.9);
+    box-shadow: 0px 8px 16px -2px rgba(149, 180, 59,0.9);
 }
 
 /******************************************************************

@@ -1,0 +1,6 @@
+
+Dark Theme
+===================================
+font - green = #95b43b
+background - grey = #403f3c
+menu hover - light grey = #696863
