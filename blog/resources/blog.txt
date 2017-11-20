@@ -1,0 +1,11 @@
+ec2-34-223-216-131.us-west-2.compute.amazonaws.com
+34.223.216.131
+
+root: PB961qOb1HmY^752@4r6%cxR*8ro8K!v
+mysql: kMtYlp&0TdVMhDOnas8*gV#55#%HwcR5
+
+
+---------------------- BITMAN INSTANCE -----------------------
+34.210.252.120
+B5YcwHQa3AfJ
+
