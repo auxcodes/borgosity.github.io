@@ -9,7 +9,6 @@ html, body {
 	display: flex;
 	justify-content: center;
 }
-
 .col {
 	flex: 1;
 }
@@ -74,6 +73,7 @@ input#lightswitch {
 .main {
   padding: 20px;
   background: #eee;
+  min-height: 100vh;
 }
 
 .main h1, h2, h3 {
@@ -116,7 +116,7 @@ input#lightswitch:checked ~ .main {
 	Page Header Paragraphs
 ******************************************************************/
 .page-header {
-	width: 50%;
+	width: 100%;
 	min-height: 100px;
     max-height: 100px;
 	margin: auto;
@@ -137,7 +137,7 @@ input#lightswitch:checked ~ .main {
 	Menu Div
 ******************************************************************/
 .page-menu {
-	width:  50%;
+	width:  100%;
 	padding: 0px 0px 0px 0px;
 	margin: auto;
 	text-align:center;
@@ -237,7 +237,7 @@ input#lightswitch:checked ~ .main .dropdown-content{
 ******************************************************************/
 .page-body {
   width: 50%;
-  min-height: 400px;
+  min-height: 65vh;
   margin: 0 auto 30px auto;
 }
 
@@ -245,7 +245,7 @@ input#lightswitch:checked ~ .main .dropdown-content{
 	Page Footer Paragraphs
 ******************************************************************/
 .page-footer {
-  width: 940px;
+  width: 100%;
   margin: 0 auto 20px auto;
 }
  
@@ -268,8 +268,58 @@ input#lightswitch:checked ~ .main .page-footer a {
 input#lightswitch:checked ~ .main .page-footer p {
   color: #95b43b;
 }
-
+/******************************************************************
+	FORM
+******************************************************************/
  
+ /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #696863;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #ccc;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    padding: 0px 30px 0px 30px; 
+}
+.container label {
+  display: block;
+  height: 25px;
+  width: 100px;
+  background: #f2f2f2;
+  text-align: left;
+  font: 14px/25px Helvetica, Arial, sans-serif;
+  color: #008000;
+  margin: 0;
+  position: inherit;
+}
+input#lightswitch:checked ~ .main .page-body .container label {
+  background-color: #403f3c;
+  color: #95b43b;
+} 
+
+
 
 
 
