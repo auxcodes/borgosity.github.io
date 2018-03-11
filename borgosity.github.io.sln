@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pages", "Pages", "{2F3BA4A2-5F11-4258-8F95-CAF730FD2CE9}"
+	ProjectSection(SolutionItems) = preProject
+		blog.html = blog.html
+		contact.html = contact.html
+		error.html = error.html
+		games.html = games.html
+		index.html = index.html
+		projects.html = projects.html
+		thanks.html = thanks.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSS", "CSS", "{95B8FE61-0C83-48E5-8B88-4145C82A33EA}"
+	ProjectSection(SolutionItems) = preProject
+		resources\css\lightDarkTheme.css = resources\css\lightDarkTheme.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JavaScript", "JavaScript", "{AF476ABA-CA43-4BE9-A372-995D9621A2CA}"
+	ProjectSection(SolutionItems) = preProject
+		resources\js\general.js = resources\js\general.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{82D37924-A652-43A5-8B2F-A0E785007E43}"
+	ProjectSection(SolutionItems) = preProject
+		templates\footer.html = templates\footer.html
+		templates\header.html = templates\header.html
+		templates\menu.html = templates\menu.html
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DCE1C877-BCFA-446D-B58A-1B047E5B5D10}
+	EndGlobalSection
+EndGlobal
