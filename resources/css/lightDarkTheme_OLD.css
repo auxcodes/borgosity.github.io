@@ -17,7 +17,7 @@ img{
 	padding: 10px;
 }
  /*Light Switch*/
-/*label {
+label {
   display: block;
   height: 25px;
   width: 100px;
@@ -65,36 +65,36 @@ input#lightswitch {
 
 .check-with-label:checked:hover ~ label:after{
 	content: "light theme";
-}*/
+}
 
 /******************************************************************
 	Wrapper
 ******************************************************************/
 .main {
-    padding: 20px;
-    background: #403f3c;
-    min-height: 100vh;
+  padding: 20px;
+  background: #eee;
+  min-height: 100vh;
 }
 
-    .main h1, h2, h3 {
-        padding: 0 20px;
-        font-family: Helvetica, Arial, sans-serif;
-        color: #95b43b;
-    }
+.main h1, h2, h3 {
+  padding: 0 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #008000;
+}
+ 
+.main p {
+  padding: 0 20px;
+  font: 13px/1.5 Helvetica, Arial, sans-serif;
+  color: #505050;
+}
 
-    .main p {
-        padding: 0 20px;
-        font: 13px/1.5 Helvetica, Arial, sans-serif;
-        color: lightgray;
-    }
+.main a {
+  font: 13px/1.5 Helvetica, Arial, sans-serif;
+  text-decoration:none!important;
+  color: #008aff;
+}
 
-    .main a {
-        font: 13px/1.5 Helvetica, Arial, sans-serif;
-        text-decoration: none !important;
-        color: lightskyblue;
-    }
-
-/*input#lightswitch:checked ~ .main  p{
+input#lightswitch:checked ~ .main  p{
   color: lightgray;
 }
 
@@ -110,7 +110,7 @@ input#lightswitch:checked ~ .main h3{
 
 input#lightswitch:checked ~ .main {
   background: #403f3c;
-}*/
+}
 
 /******************************************************************
 	Page Header Paragraphs
@@ -129,9 +129,9 @@ input#lightswitch:checked ~ .main {
   padding: 0px 0px 0px 0px;
 }
 
- /*input#lightswitch:checked ~ .main .page-header h1 {
+ input#lightswitch:checked ~ .main .page-header h1 {
   color: #95b43b;
-}*/
+}
 
 /******************************************************************
 	Menu Div
@@ -142,11 +142,11 @@ input#lightswitch:checked ~ .main {
 	margin: auto;
 	text-align:center;
 }
-    .page-menu a {
-        font: 15px/1.5 Helvetica, Arial, sans-serif;
-        text-decoration: none !important;
-        color: #95b43b;
-    }
+.page-menu a {
+  font: 15px/1.5 Helvetica, Arial, sans-serif;
+  text-decoration:none!important;
+  color: inherit; 
+}
 
 /******************************************************************
 	Menu Bar
@@ -157,26 +157,34 @@ input#lightswitch:checked ~ .main {
 	color:inherit;
 	position: relative;
 }
-    .menu-bar .menu-btn:hover {
-        background-color: #696863;
-        box-shadow: 0px 8px 15px -8px rgba(149, 180, 59,0.9);
-    }
+.menu-bar .menu-btn:hover{
+	background-color:#ddd;
+	box-shadow: 0px 8px 15px -8px rgba(0,0,0,0.5);
+}
 
 /******************************************************************
 	Menu Buttons
 ******************************************************************/
-.menu-btn {
-    border: none;
-    display: inline-block;
-    outline: 0;
-    padding: 8px 16px;
-    vertical-align: middle;
-    text-decoration: none !important;
-    color: #95b43b;
-    background-color: #696863;
-    text-align: center;
-    cursor: pointer;
-    white-space: nowrap;
+.menu-btn{
+	border:none;
+	display:inline-block;
+	outline:0;
+	padding:8px 16px;
+	vertical-align:middle;
+	text-decoration:none!important;
+	color:#fff;
+	background-color:#fff;
+	text-align:center;
+	cursor:pointer;
+	white-space:nowrap;
+}
+
+input#lightswitch:checked ~ .main .menu-btn a{
+	color: #95b43b; 
+}
+input#lightswitch:checked ~ .main .menu-btn:hover{
+	background-color: #696863;
+	box-shadow: 0px 8px 15px -8px rgba(149, 180, 59,0.9);
 }
 
 
@@ -192,24 +200,36 @@ input#lightswitch:checked ~ .main {
     position: absolute;
     background-color: inherit;
     color: inherit;
-    box-shadow: 0px 8px 16px -2px rgba(149, 180, 59,0.9);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
 }
 
-    .dropdown-content a {
-        color: #95b43b;
-        background-color: #403f3c;
-        padding: 8px 16px;
-        text-decoration: none;
-        display: block;
-    }
+.dropdown-content a {
+    color: inherit;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+}
 
-    .dropdown-content a:hover {
-        color: #95b43b;
-        background-color: #696863
-    }
+.dropdown-content a:hover {
+  background-color: #eee
+}
 
 .menu-btn.dropdown:hover .dropdown-content {
     display: block;
+}
+
+input#lightswitch:checked ~ .main .dropdown-content a{
+  color: #95b43b; 
+  background-color: #403f3c;
+}
+
+input#lightswitch:checked ~ .main .dropdown-content a:hover{
+  color: #95b43b; 
+  background-color: #696863;
+}
+
+input#lightswitch:checked ~ .main .dropdown-content{
+    box-shadow: 0px 8px 16px -2px rgba(149, 180, 59,0.9);
 }
 
 /******************************************************************
@@ -228,20 +248,26 @@ input#lightswitch:checked ~ .main {
   width: 100%;
   margin: 0 auto 20px auto;
 }
-
+ 
 .page-footer p {
-    width: 100%;
-    text-align: center;
-    padding: 0 10px;
-    font: 10px/1.5 Helvetica, Arial, sans-serif;
-    color: #95b43b;
+  width: 100%;
+  text-align: center;
+  padding: 0 10px;
+  font: 10px/1.5 Helvetica, Arial, sans-serif;
 }
 
 .page-footer a {
-    font: 10px/1.5 Helvetica, Arial, sans-serif;
-    color: #95b43b;
+  font: 10px/1.5 Helvetica, Arial, sans-serif;
+  color: inherit;
 }
 
+input#lightswitch:checked ~ .main .page-footer a {
+  color: #95b43b;
+}
+
+input#lightswitch:checked ~ .main .page-footer p {
+  color: #95b43b;
+}
 /******************************************************************
 	FORM
 ******************************************************************/
@@ -277,18 +303,21 @@ input[type=submit]:hover {
 .container {
     padding: 0px 30px 0px 30px; 
 }
-    .container label {
-        display: block;
-        height: 25px;
-        width: 100px;
-        background: #403f3c;
-        text-align: left;
-        font: 14px/25px Helvetica, Arial, sans-serif;
-        color: #95b43b;
-        margin: 0;
-        position: inherit;
-    }
-
+.container label {
+  display: block;
+  height: 25px;
+  width: 100px;
+  background: #f2f2f2;
+  text-align: left;
+  font: 14px/25px Helvetica, Arial, sans-serif;
+  color: #008000;
+  margin: 0;
+  position: inherit;
+}
+input#lightswitch:checked ~ .main .page-body .container label {
+  background-color: #403f3c;
+  color: #95b43b;
+} 
 
 
 

@@ -17,6 +17,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSS", "CSS", "{95B8FE61-0C83-48E5-8B88-4145C82A33EA}"
 	ProjectSection(SolutionItems) = preProject
 		resources\css\lightDarkTheme.css = resources\css\lightDarkTheme.css
+		resources\css\lightDarkTheme_OLD.css = resources\css\lightDarkTheme_OLD.css
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JavaScript", "JavaScript", "{AF476ABA-CA43-4BE9-A372-995D9621A2CA}"
