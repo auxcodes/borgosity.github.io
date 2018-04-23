@@ -1,0 +1,83 @@
+﻿﻿<!DOCTYPE html>
+<html lang="en-us">
+<<<<<<< HEAD
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>borgosity</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="p:domain_verify" content="2fc66fbfff1f78df4abe6e17db1164b4" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="resources/js/general.js"></script>
+    <link rel="stylesheet" href="resources/css/lightDarkTheme.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+</head>
+=======
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>borgosity</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="p:domain_verify" content="2fc66fbfff1f78df4abe6e17db1164b4" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="resources/js/general.js"></script>
+		<link rel="stylesheet" href="resources/css/lightDarkTheme.css">
+		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet"> 
+	</head>
+>>>>>>> f0e3e3f581607622bc8dd2663aa42b21200d7c25
+	<body>
+		<input type="checkbox" class="check-with-label" id="lightswitch" />
+		<label class="check-with-label" for="lightswitch"></label>
+				
+		<div class="main">
+			<div id="header" class="page-header"></div>
+
+			<div id="menu" class="page-menu"></div>
+			
+			<div class="page-body">
+				<h2>Hello there!</h2>
+				<p>Welcome to the wonderful world of Borgosity, where knowledge assimilation is the one true constant!</p>
+				<p>My name is Phill and I make digital things with words (aka: games programmer).
+					Although I wasn’t always this way; I was once a drone in a large corporation doing repetitive mundane work. Then one day I woke up and remembered how much fun I had at university doing graphics and games programming and thought “I wish I could do that for a living!”.
+					So I applied to the Academy of Interactive Entertainment to learn how to become a games programmer…</p>
+				<p>
+					And here we are two years later, I moved from Canberra to Melbourne and having having heaps of fun making games and meeting like minded people.</p>
+				<p>So now that we’re fast becoming friends, please feel free to check out my current projects on<a href="https://www.instagram.com/borgosity/"> Instagram </a>,
+				<a href="https://twitter.com/borgosity"> Twitter </a> and
+				<a href="https://www.youtube.com/channel/UCp2PBgaEYJ3c23L3sP5DsVA"> YouTube </a> and hopefully you find something of interest!</p>
+				<h3>Plumpees</h3>
+				<div class="flex-grid">
+                    <a href="projects.html#plumpees">
+                        <img src="resources/images/PlumpeesGameIntro.gif" alt="plumpees game intro" height="300">
+                        <img src="resources/images/plumpeesDesert.gif" alt="plumpees desert game play" height="300">
+                        <img src="resources/images/plumpeesIsland.gif" alt="plumpees island game play" height="300">
+                    </a>
+				</div>
+				<h3>Space Shot</h3>
+                <div class="flex-grid">
+                    <a href="projects.html#space_shot">
+                        <img src="resources/images/spaceShotHome.jpg" alt="space shot home jpeg" height="300">
+                        <img src="resources/images/spaceShot.gif" alt="space shot gif" height="300">
+                        <img src="resources/images/spaceShotScore.jpg" alt="space shot score jpeg" height="300">
+                    </a>
+                </div>
+				<h3>Endless Keep</h3>
+                <div class="flex-grid">
+                    <a href="projects.html#endless_keep">
+                        <img src="resources/images/endlessKeep.gif" alt="endless keep gif" height="200">
+                        <img src="resources/images/endlessKeepGamePlay.gif" alt="endless keep game play gif" height="200">
+                    </a>
+                </div>
+				<h3>Prototyping</h3>
+				<div class="flex-grid">
+					<img src="resources/images/SpawnPoints.gif" alt="spawn points gif" height="150">
+					<img src="resources/images/emergentBehaviour.gif" alt="robot spider behaviour gif" height="150">
+					<img src="resources/images/SphericalMovement.gif" alt="spherical movement gif" height="150">
+				</div>
+			</div>
+	 
+			<div id="footer" class="page-footer">
+			</div>
+		</div>
+	</body>
+</html>
