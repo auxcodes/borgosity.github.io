@@ -8,23 +8,26 @@ $(document).ready(function(){
 	$("#footer").load("templates/footer.html");
 	$("#parentfooter").load("../../templates/footer.html"); 
 	
-// theme memory
-	var checkboxValues = JSON.parse(localStorage.getItem('checkboxValues')) || {};
-	var $checkboxes = $(":checkbox");
+// sticky menu
+	// When the user scrolls the page, execute myFunction
+	window.onscroll = function () { myFunction() };
 
-	$checkboxes.on("change", function(){
-	  $checkboxes.each(function(){
-		checkboxValues[this.id] = this.checked;
-	  });
-	  localStorage.setItem("checkboxValues", JSON.stringify(checkboxValues));
-	});
-	// set check box from storage	
-	var checkboxValues = JSON.parse(localStorage.getItem('checkboxValues'));
-	if (checkboxValues === null){
-	  checkboxValues = {};
-	}
+	// Get the header
+	var menu = document.getElementById("menu");
+	var header = document.getElementById("header");
 
-	$.each(checkboxValues, function(key, value) {
-	  $("#" + key).prop('checked', value);
-	});
+	// Get the offset position of the navbar
+	var sticky = menu.offsetTop + header.offsetHeight;
+
+	// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+	function myFunction() {
+		if (window.pageYOffset >= sticky) {
+			menu.classList.add("sticky");
+			console.log(sticky);
+		} else {
+			menu.classList.remove("sticky");
+			console.log(sticky);
+		}
+	} 
 });
+

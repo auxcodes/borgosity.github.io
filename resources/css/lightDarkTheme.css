@@ -1,10 +1,17 @@
 /******************************************************************
 	Page Main 
 *******************************************************************/
-html, body {
-  height: 100%;
-  margin: 0;
+html {
+    height: 100%;
+    margin: 0;
 }
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+
 .flex-grid{
 	display: flex;
 	justify-content: center;
@@ -16,151 +23,105 @@ html, body {
 img{
 	padding: 10px;
 }
- /*Light Switch*/
-/*label {
-  display: block;
-  height: 25px;
-  width: 100px;
-  background: #ccc;
-  text-align: center;
-  font: 14px/25px Helvetica, Arial, sans-serif;
-  color: #008000;
-  margin: 20px 0;
-  position: fixed;
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
 }
 
-label:hover {
-  background: #696863;
-  color: #95b43b;
-  cursor: pointer;
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .page-body {
+    padding-top: 40px;
 }
-
-.check-with-label ~ label:after{
-	content: "light theme";
-}
-
-.check-with-label:hover ~ label:after{
-	content: "dark theme";
-}
- 
-input#lightswitch {
-   position: absolute;
-   top: -9999px;
-   left: -9999px;
-}
-
-.check-with-label:checked ~ label {
-  background: #696863;
-  color: #95b43b;
-} 
-
-.check-with-label:checked ~ label:hover {
-  background: #ccc;
-  color: #008000;
-} 
-
-.check-with-label:checked ~ label:after{
-	content: "dark theme";
-}
-
-.check-with-label:checked:hover ~ label:after{
-	content: "light theme";
-}*/
 
 /******************************************************************
 	Wrapper
 ******************************************************************/
 .main {
-    padding: 20px;
+    /*padding: 0 20px;*/
     background: #403f3c;
     min-height: 100vh;
+    background-image: url("../images/titleBanner.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-    .main h1, h2, h3 {
-        padding: 0 20px;
-        font-family: Helvetica, Arial, sans-serif;
-        color: #95b43b;
-    }
-
-    .main p {
-        padding: 0 20px;
-        font: 13px/1.5 Helvetica, Arial, sans-serif;
-        color: lightgray;
-    }
-
-    .main a {
-        font: 13px/1.5 Helvetica, Arial, sans-serif;
-        text-decoration: none !important;
-        color: lightskyblue;
-    }
-
-/*input#lightswitch:checked ~ .main  p{
-  color: lightgray;
+.main h1, h2, h3 {
+    padding: 0 20px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #95b43b;
 }
 
-input#lightswitch:checked ~ .main  a{
-  color: lightskyblue;
+.main p {
+    padding: 0 20px;
+    font: 13px/1.5 Helvetica, Arial, sans-serif;
+    color: lightgray;
 }
 
-input#lightswitch:checked ~ .main h1,
-input#lightswitch:checked ~ .main h2, 
-input#lightswitch:checked ~ .main h3{
-  color: #95b43b;
+.main a {
+    font: 13px/1.5 Helvetica, Arial, sans-serif;
+    text-decoration: none !important;
+    color: lightskyblue;
 }
-
-input#lightswitch:checked ~ .main {
-  background: #403f3c;
-}*/
 
 /******************************************************************
 	Page Header Paragraphs
 ******************************************************************/
 .page-header {
-	width: 100%;
-	min-height: 100px;
-    max-height: 100px;
-	margin: auto;
-	padding: 0px 0px 0px 0px;
+    width: 100%;
+    min-height: 100px;
+    /*max-height: 100px;*/
+    margin: auto;
+    padding: 0px 0px 0px 0px;
+    background: linear-gradient(to right, rgba(64,63,60,0), rgba(64,63,60,1) 50%, rgba(64,63,60,0) );
 }
- 
+    .page-header img {
+        /*//width: 50%;
+    position: center;*/
+
+    }
+
 .page-header h1 {
   text-align: center;
   font: 70px 'Orbitron', sans-serif;
   padding: 0px 0px 0px 0px;
 }
 
- /*input#lightswitch:checked ~ .main .page-header h1 {
-  color: #95b43b;
-}*/
-
 /******************************************************************
 	Menu Div
 ******************************************************************/
 .page-menu {
-	width:  100%;
-	padding: 0px 0px 0px 0px;
-	margin: auto;
-	text-align:center;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    margin: auto;
+    text-align: center;
+    /*background-color: #403f3c;*/
+    background: linear-gradient(to right, rgba(64,63,60,0), rgba(64,63,60,1) 50%, rgba(64,63,60,0) );
 }
-    .page-menu a {
-        font: 15px/1.5 Helvetica, Arial, sans-serif;
-        text-decoration: none !important;
-        color: #95b43b;
-    }
+.page-menu a {
+    font: 15px/1.5 Orbitron, Helvetica, Arial, sans-serif;
+    text-decoration: none !important;
+    color: #95b43b;
+}
 
 /******************************************************************
 	Menu Bar
 ******************************************************************/
-.menu-bar .menu-btn{
-	box-shadow:none;
-	background-color:inherit;
-	color:inherit;
-	position: relative;
+.menu-bar .menu-btn {
+    box-shadow: none;
+    background-color: #403f3c;
+    color: inherit;
+    position: relative;
 }
-    .menu-bar .menu-btn:hover {
-        background-color: #696863;
-        box-shadow: 0px 8px 15px -8px rgba(149, 180, 59,0.9);
-    }
+.menu-bar .menu-btn:hover {
+    background-color: #696863;
+    border-bottom: 1px solid #95b43b;
+    box-shadow: 0px 8px 15px -8px rgba(149, 180, 59,0.9);
+}
 
 /******************************************************************
 	Menu Buttons
@@ -177,7 +138,14 @@ input#lightswitch:checked ~ .main {
     text-align: center;
     cursor: pointer;
     white-space: nowrap;
+    border-bottom: 1px solid #403f3c;
+    border-radius: 5px;
 }
+
+    .menu-btn:hover a {
+        color: #bad764;
+        /*text-shadow: 0px 0px 1px #bad764;*/
+    }
 
 
 /******************************************************************
@@ -195,18 +163,18 @@ input#lightswitch:checked ~ .main {
     box-shadow: 0px 8px 16px -2px rgba(149, 180, 59,0.9);
 }
 
-    .dropdown-content a {
-        color: #95b43b;
-        background-color: #403f3c;
-        padding: 8px 16px;
-        text-decoration: none;
-        display: block;
-    }
+.dropdown-content a {
+    color: #95b43b;
+    background-color: #403f3c;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+}
 
-    .dropdown-content a:hover {
-        color: #95b43b;
-        background-color: #696863
-    }
+.dropdown-content a:hover {
+    color: #95b43b;
+    background-color: #696863
+}
 
 .menu-btn.dropdown:hover .dropdown-content {
     display: block;
@@ -220,6 +188,10 @@ input#lightswitch:checked ~ .main {
   min-height: 65vh;
   margin: 0 auto 30px auto;
 }
+
+    .page-body p {
+        background: radial-gradient(rgba(64,63,60,1), rgba(64,63,60,0) 75%);
+    }
 
 /******************************************************************
 	Page Footer Paragraphs
