@@ -58,12 +58,12 @@ img{
 
 .main p {
   padding: 0 20px;
-  font: 13px/1.5 Helvetica, Arial, sans-serif;
+  font: 16px/1.5 Helvetica, Arial, sans-serif;
   color: lightgray;
 }
 
 .main a {
-  font: 13px/1.5 Helvetica, Arial, sans-serif;
+  font: 16px/1.5 Helvetica, Arial, sans-serif;
   text-decoration:none!important;
 
   color: lightskyblue;
@@ -106,9 +106,9 @@ img{
     background: linear-gradient(to right, rgba(64,63,60,0), rgba(64,63,60,1) 50%, rgba(64,63,60,0) );
 }
 .page-menu a {
-  font: 15px/1.5 Helvetica, Arial, sans-serif;
-  text-decoration:none!important;
-  color: #95b43b; 
+    font: 16px/1.5 Orbitron, Helvetica, Arial, sans-serif;
+    text-decoration: none !important;
+    color: #95b43b;
 }
 
 /******************************************************************
@@ -193,9 +193,9 @@ img{
   margin: 0 auto 30px auto;
 }
 
-    .page-body p {
-        background: radial-gradient(rgba(64,63,60,1), rgba(64,63,60,0) 75%);
-    }
+.page-body p {
+    background: radial-gradient(rgba(64,63,60,1), rgba(64,63,60,0) 75%);
+}
 
 /******************************************************************
 	Page Footer Paragraphs
