@@ -188,6 +188,7 @@ img{
 .page-body {
   width: 50%;
   min-height: 65vh;
+  min-width: 300px;
   margin: 0 auto 30px auto;
 }
 
