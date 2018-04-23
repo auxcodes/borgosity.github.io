@@ -13,20 +13,15 @@ $(document).ready(function(){
 	window.onscroll = function () { myFunction() };
 
 	// Get the header
-	var menu = document.getElementById("menu");
 	var header = document.getElementById("header");
-
-	// Get the offset position of the navbar
-	var sticky = menu.offsetTop + header.offsetHeight;
 
 	// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 	function myFunction() {
-		if (window.pageYOffset >= sticky) {
+		// Get the offset position of the navbar
+		if (window.pageYOffset >= header.offsetHeight) {
 			menu.classList.add("sticky");
-			console.log(sticky);
 		} else {
 			menu.classList.remove("sticky");
-			console.log(sticky);
 		}
 	} 
 });

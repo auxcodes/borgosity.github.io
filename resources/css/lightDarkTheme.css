@@ -79,11 +79,13 @@ img{
     padding: 0px 0px 0px 0px;
     background: linear-gradient(to right, rgba(64,63,60,0), rgba(64,63,60,1) 50%, rgba(64,63,60,0) );
 }
-    .page-header img {
-        /*//width: 50%;
-    position: center;*/
 
-    }
+.page-header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 
 .page-header h1 {
   text-align: center;
