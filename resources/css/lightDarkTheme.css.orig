@@ -58,15 +58,41 @@ img{
 
 .main p {
   padding: 0 20px;
-  font: 13px/1.5 Helvetica, Arial, sans-serif;
-  color: lightgray;
+  font: 16px/1.5 Helvetica, Arial, sans-serif;
+  color: #505050;
 }
 
 .main a {
-  font: 13px/1.5 Helvetica, Arial, sans-serif;
+  font: 16px/1.5 Helvetica, Arial, sans-serif;
   text-decoration:none!important;
+  color: #008aff;
+}
 
+input#lightswitch:checked ~ .main  p{
+  color: lightgray;
+}
+
+input#lightswitch:checked ~ .main  a{
   color: lightskyblue;
+}
+
+input#lightswitch:checked ~ .main h1,
+input#lightswitch:checked ~ .main h2, 
+input#lightswitch:checked ~ .main h3{
+  color: #95b43b;
+}
+
+input#lightswitch:checked ~ .main {
+    background: #403f3c;
+    padding: 0 20px;
+    font: 13px/1.5 Helvetica, Arial, sans-serif;
+    color: lightgray;
+}
+
+.main a {
+    font: 13px/1.5 Helvetica, Arial, sans-serif;
+    text-decoration: none !important;
+    color: lightskyblue;
 }
 
 /******************************************************************
@@ -106,9 +132,9 @@ img{
     background: linear-gradient(to right, rgba(64,63,60,0), rgba(64,63,60,1) 50%, rgba(64,63,60,0) );
 }
 .page-menu a {
-  font: 15px/1.5 Helvetica, Arial, sans-serif;
-  text-decoration:none!important;
-  color: #95b43b; 
+    font: 18px/1.5 Orbitron, Helvetica, Arial, sans-serif;
+    text-decoration: none !important;
+    color: #95b43b;
 }
 
 /******************************************************************
@@ -210,14 +236,18 @@ img{
   text-align: center;
   padding: 0 10px;
   font: 13px/1.5 Helvetica, Arial, sans-serif;
-  color: #95b43b;
 }
 
 .page-footer a {
-  font: 13px/1.5 Helvetica, Arial, sans-serif;
-
-  color: #95b43b;
+    font: 13px/1.5 Helvetica, Arial, sans-serif;
+    color: inherit;
+    width: 100%;
+    text-align: center;
+    padding: 0 10px;
+    font: 10px/1.5 Helvetica, Arial, sans-serif;
+    color: #95b43b;
 }
+
 
 /******************************************************************
 	FORM
