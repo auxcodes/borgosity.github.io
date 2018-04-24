@@ -198,7 +198,7 @@ img{
 }
 
 .page-body p {
-    background: rgba(64,63,60,0.5);
+    background: rgba(64,63,60,0.7);
     border: 3px;
     border-radius: 10px;
 }
@@ -290,7 +290,7 @@ input[type=submit]:hover {
     display: block;
     height: 25px;
     width: 100px;
-    background: rgba(64,63,60,0.5);
+    background: rgba(64,63,60,0.7);
     border: 3px;
     border-radius: 4px;
     text-align: left;
