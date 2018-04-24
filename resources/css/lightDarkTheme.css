@@ -54,20 +54,25 @@ img{
     padding: 0 20px;
     font-family: Helvetica, Arial, sans-serif;
     color: #95b43b;
+    text-shadow: 0px 0px 15px rgba(64,63,60,1);
+    /*background: rgba(64,63,60,0.5);
+    border: 3px;
+    border-radius: 5px;*/
 }
 
 .main p {
-  padding: 0 20px;
-  font: 16px/1.5 Helvetica, Arial, sans-serif;
-  color: lightgray;
+    margin: 5px 0px;
+    padding: 5px 20px;
+    font: 16px/1.5 Helvetica, Arial, sans-serif;
+    color: lightgray;
 }
 
 .main a {
-  font: 16px/1.5 Helvetica, Arial, sans-serif;
-  text-decoration:none!important;
-
-  color: lightskyblue;
+    font: 16px/1.5 Helvetica, Arial, sans-serif;
+    text-decoration:none!important;
+    color: lightskyblue;
 }
+
 
 /******************************************************************
 	Page Header Paragraphs
@@ -78,7 +83,7 @@ img{
     /*max-height: 100px;*/
     margin: auto;
     padding: 0px 0px 0px 0px;
-    background: linear-gradient(to right, rgba(64,63,60,0), rgba(64,63,60,1) 50%, rgba(64,63,60,0) );
+    background: linear-gradient(to right, rgba(64,63,60,0) 25%, rgba(64,63,60,1) 35%, rgba(64,63,60,1) 65%, rgba(64,63,60,0) 75% );
 }
 
 .page-header img {
@@ -89,9 +94,9 @@ img{
 }
 
 .page-header h1 {
-  text-align: center;
-  font: 70px 'Orbitron', sans-serif;
-  padding: 0px 0px 0px 0px;
+    text-align: center;
+    font: 70px 'Orbitron', sans-serif;
+    padding: 0px 0px 0px 0px;
 }
 
 /******************************************************************
@@ -99,11 +104,11 @@ img{
 ******************************************************************/
 .page-menu {
     width: 100%;
-    padding: 0px 0px 0px 0px;
+    padding: 5px 0px 5px 0px;
     margin: auto;
     text-align: center;
     /*background-color: #403f3c;*/
-    background: linear-gradient(to right, rgba(64,63,60,0), rgba(64,63,60,1) 50%, rgba(64,63,60,0) );
+    background: linear-gradient(to right, rgba(64,63,60,0) 25%, rgba(64,63,60,1) 35%, rgba(64,63,60,1) 65%, rgba(64,63,60,0) 75% );
 }
 .page-menu a {
     font: 16px/1.5 Orbitron, Helvetica, Arial, sans-serif;
@@ -142,13 +147,12 @@ img{
     cursor: pointer;
     white-space: nowrap;
     border-bottom: 1px solid #403f3c;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
-    .menu-btn:hover a {
-        color: #bad764;
-        /*text-shadow: 0px 0px 1px #bad764;*/
-    }
+.menu-btn:hover a {
+    color: #bad764;
+}
 
 
 /******************************************************************
@@ -176,7 +180,7 @@ img{
 
 .dropdown-content a:hover {
     color: #95b43b;
-    background-color: #696863
+    background-color: #696863;
 }
 
 .menu-btn.dropdown:hover .dropdown-content {
@@ -184,39 +188,62 @@ img{
 }
 
 /******************************************************************
-	Page Body Paragraphs
+	Page Body 
 ******************************************************************/
 .page-body {
-  width: 50%;
-  min-height: 65vh;
-  min-width: 300px;
-  margin: 0 auto 30px auto;
+    width: 50%;
+    min-height: 65vh;
+    min-width: 300px;
+    margin: 0 auto 30px auto;
 }
 
 .page-body p {
-    background: radial-gradient(rgba(64,63,60,1), rgba(64,63,60,0) 75%);
+    background: rgba(64,63,60,0.5);
+    border: 3px;
+    border-radius: 10px;
+}
+
+.page-body .div-list {
+    margin: 5px 0px;
+    padding: 5px 0px 5px 20px;
+    font: 16px/1.5 Helvetica, Arial, sans-serif;
+    color: lightgray;
+    background: rgba(64,63,60,0.5);
+    border: 3px;
+    border-radius: 10px;
+}
+
+.page-body ul {
+    margin: 0px;
+}
+
+.page-body .div-list p {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    font: 16px/1.5 Helvetica, Arial, sans-serif;
+    color: lightgray;
+    background: none;
 }
 
 /******************************************************************
 	Page Footer Paragraphs
 ******************************************************************/
 .page-footer {
-  width: 100%;
-  margin: 0 auto 20px auto;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding-bottom: 20px;
 }
 
 .page-footer p {
-  width: 100%;
-  text-align: center;
-  padding: 0 10px;
-  font: 13px/1.5 Helvetica, Arial, sans-serif;
-  color: #95b43b;
+    text-align: center;
+    padding: 0 10px;
+    font: 13px/1.5 Helvetica, Arial, sans-serif;
+    color: #95b43b;
 }
 
 .page-footer a {
-  font: 13px/1.5 Helvetica, Arial, sans-serif;
-
-  color: #95b43b;
+    font: 13px/1.5 Helvetica, Arial, sans-serif;
+    color: #95b43b;
 }
 
 /******************************************************************
@@ -226,45 +253,53 @@ img{
  /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     width: 100%; /* Full width */
-    padding: 12px; /* Some padding */  
+    padding: 10px; /* Some padding */
     border: 1px solid #ccc; /* Gray border */
     border-radius: 4px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    font-size: 16px;
 }
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
     background-color: #696863;
-    color: white;
+    color: #95b43b;
     padding: 12px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 10px;
     cursor: pointer;
+    font-size: 18px;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-    background-color: #ccc;
+    background-color: #696863;
+    border-bottom: 1px solid #95b43b;
+    box-shadow: 0px 8px 15px -8px rgba(149, 180, 59,0.9);
+    color: #bad764;
 }
 
 /* Add a background color and some padding around the form */
 .container {
-    padding: 0px 30px 0px 30px; 
+    padding: 0px 20px 0px 20px; 
 }
-    .container label {
-        display: block;
-        height: 25px;
-        width: 100px;
-        background: #403f3c;
-        text-align: left;
-        font: 14px/25px Helvetica, Arial, sans-serif;
-        color: #95b43b;
-        margin: 0;
-        position: inherit;
-    }
+.container label {
+    display: block;
+    height: 25px;
+    width: 100px;
+    background: rgba(64,63,60,0.5);
+    border: 3px;
+    border-radius: 4px;
+    text-align: left;
+    font: 18px/25px Helvetica, Arial, sans-serif;
+    color: lightgray;
+    margin: 0;
+    padding: 5px 10px;
+    position: inherit;
+}
 
 
 
