@@ -5,13 +5,13 @@ VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pages", "Pages", "{2F3BA4A2-5F11-4258-8F95-CAF730FD2CE9}"
 	ProjectSection(SolutionItems) = preProject
+		404.html = 404.html
 		blog.html = blog.html
 		contact.html = contact.html
 		error.html = error.html
 		games.html = games.html
 		index.html = index.html
 		projects.html = projects.html
-		thanks.html = thanks.html
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSS", "CSS", "{95B8FE61-0C83-48E5-8B88-4145C82A33EA}"
