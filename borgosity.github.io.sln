@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pages", "Pages", "{2F3BA4A2-5F11-4258-8F95-CAF730FD2CE9}"
 	ProjectSection(SolutionItems) = preProject
 		404.html = 404.html
+		about.html = about.html
 		blog.html = blog.html
 		contact.html = contact.html
 		error.html = error.html
@@ -32,9 +33,31 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{
 		templates\menu.html = templates\menu.html
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Games", "Games", "{BB57A701-2AE9-4AEE-93C1-FFD45750F56B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "endlessKeep", "endlessKeep", "{813EF5EC-0CEF-4A8E-BB83-0E1E34D1C1BC}"
+	ProjectSection(SolutionItems) = preProject
+		games\endlessKeep\index.html = games\endlessKeep\index.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "wasdArrow", "wasdArrow", "{5E1D536C-5307-4D81-A1FB-07C021904F0F}"
+	ProjectSection(SolutionItems) = preProject
+		games\wasdArrow\index.html = games\wasdArrow\index.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "wasdArrowTwo", "wasdArrowTwo", "{70699A64-ADAE-47D1-BB77-7E7CE856A847}"
+	ProjectSection(SolutionItems) = preProject
+		games\wasdArrowTwo\index.html = games\wasdArrowTwo\index.html
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{813EF5EC-0CEF-4A8E-BB83-0E1E34D1C1BC} = {BB57A701-2AE9-4AEE-93C1-FFD45750F56B}
+		{5E1D536C-5307-4D81-A1FB-07C021904F0F} = {BB57A701-2AE9-4AEE-93C1-FFD45750F56B}
+		{70699A64-ADAE-47D1-BB77-7E7CE856A847} = {BB57A701-2AE9-4AEE-93C1-FFD45750F56B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DCE1C877-BCFA-446D-B58A-1B047E5B5D10}
