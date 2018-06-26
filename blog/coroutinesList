@@ -1,0 +1,62 @@
+
+    public static List<IEnumerator> _coroutines = new List<IEnumerator>();
+
+    private void LateUpdate()
+    {
+        coroutineCount = _coroutines.Count;
+        if (_coroutines.Count > 0)
+        {
+            int count = _coroutines.Count;
+            for(int i =0;i < count; i++)
+            {
+                StartCoroutine(_coroutines[i]);
+            }
+        }
+    }
+    
+        #region ANIMATE OBJECTS
+    public IEnumerator Shrink(GameObject uiObject, Vector2 targetSize)
+    {
+        bool done = false;
+        RectTransform rectTransform = uiObject.GetComponent<RectTransform>();
+        Debug.Log("Start: " + uiObject.name + ", " + targetSize);
+        while (!done)
+        {
+            float sizeX = Mathf.Lerp(rectTransform.sizeDelta.x, targetSize.x, Time.deltaTime * uiShrinkTime);
+            float sizeY = Mathf.Lerp(rectTransform.sizeDelta.y, targetSize.y, Time.deltaTime * uiShrinkTime);
+            rectTransform.sizeDelta = new Vector2(sizeX, sizeY);
+            
+            if (sizeX <= targetSize.x && sizeY <= targetSize.y)
+                done = true;
+
+            yield return null;
+        }
+    }
+    public IEnumerator FillUI(SlantedImageUI uiObject, float startPoint, float targetFill)
+    {
+        bool done = false;
+        uiObject.fill = startPoint;
+
+        while (!done)
+        {
+            float newFill = Mathf.Lerp(uiObject.fill, targetFill, Time.deltaTime * uiFillTime);
+            uiObject.fill = newFill;
+
+            if (newFill >= targetFill)
+                done = true;
+
+            yield return null;
+        }
+    }
+    private void StopRoutines()
+    {
+        if (_coroutines.Count > 0)
+        {
+            int count = _coroutines.Count;
+            for (int i = 0; i < count; i++)
+            {
+                StopCoroutine(_coroutines[i]);
+            }
+        }
+    }
+    #endregion
