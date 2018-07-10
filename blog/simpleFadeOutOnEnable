@@ -1,0 +1,39 @@
+/// <summary>
+/// Script to fade out (alpha 0-1) canvas group when object is enabled.
+/// </summary>
+public class OverlayFade : MonoBehaviour {
+
+    public CanvasGroup fadeGroup;
+    public float _fadeTime = 0.5f;
+
+    public void OnEnable()
+    {
+        FadeOut(null, _fadeTime);
+    }
+
+    private void FadeOut(Action callback, float fadeTime)
+    {
+        StartCoroutine(FadeAsync(false, callback, fadeTime));
+    }
+
+    IEnumerator FadeAsync(bool fadeIn, Action callback, float fadeTime, bool showsplash = false)
+    {
+        float startAlpha = fadeIn ? 1 : 0;
+        float endAlpha = fadeIn ? 0 : 1;
+
+        for (float t = 0; t < fadeTime; t += Time.unscaledDeltaTime)
+        {
+            yield return null;
+            fadeGroup.alpha = Mathf.LerpUnclamped(startAlpha, endAlpha, t / fadeTime);
+        }
+        fadeGroup.alpha = endAlpha;
+
+        if (fadeIn)
+        {
+            fadeGroup.gameObject.SetActive(false);
+        }
+
+        if (callback != null)
+            callback();
+    }
+}
