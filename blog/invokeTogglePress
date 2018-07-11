@@ -1,0 +1,7 @@
+using EventSystem                
+                
+                TabUIScrollList scrollTabs = TutorialCanvas.Instance.ActiveUIObject.transform.parent.parent.GetComponent<TabUIScrollList>();
+                TutorialCanvas.Instance.ActiveUIObject.GetComponent<Toggle>().onValueChanged.Invoke(true);
+                PointerEventData pointerEventData = new PointerEventData(EventSystem.current);
+                pointerEventData.position = scrollTabs.transform.GetChild(0).localPosition;
+                scrollTabs.OnPointerClick(pointerEventData);
