@@ -1,0 +1,69 @@
+using UnityEngine;
+using UnityEngine.UI;
+
+public class RangeSlider : MonoBehaviour
+{
+    public float minValue = 0;
+    public float maxValue = 1;
+    public bool wholeNumbers = false;
+    public float startValue = 0;
+    public float endValue = 0;
+
+    public Slider startSlider = null;
+    public Slider endSlider = null;
+
+    private void Awake()
+    {
+        if (startSlider != null)
+        {
+            startSlider.minValue = minValue;
+            startSlider.maxValue = maxValue;
+            startSlider.wholeNumbers = wholeNumbers;
+            startSlider.value = startValue;
+        }
+        if (endSlider != null)
+        {
+            endSlider.minValue = minValue;
+            endSlider.maxValue = maxValue;
+            endSlider.wholeNumbers = wholeNumbers;
+            endSlider.value = endValue;
+        }
+    }
+
+    public void OnStartSliderMove()
+    {
+        if (endSlider == null | startSlider == null)
+            return;
+
+        float distance = endSlider.handleRect.anchorMin.x - startSlider.handleRect.anchorMax.x;
+        if (distance < 0)
+        {
+            if (endSlider.value < endSlider.maxValue)
+            {
+                endSlider.value = startSlider.value;
+            }
+        }
+        // update slider values
+        startValue = startSlider.value;
+        endValue = endSlider.value;
+    }
+
+    public void OnEndSliderMove()
+    {
+        if (endSlider == null | startSlider == null)
+            return;
+
+        float distance = endSlider.handleRect.anchorMin.x - startSlider.handleRect.anchorMax.x;
+        if (distance < 0)
+        {
+            if (startSlider.value > 0)
+            {
+                startSlider.value = endSlider.value;
+            }
+        }
+        // update slider values
+        startValue = startSlider.value;
+        endValue = endSlider.value;
+    }
+
+}
