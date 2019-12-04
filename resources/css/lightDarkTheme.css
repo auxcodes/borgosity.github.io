@@ -12,16 +12,18 @@ body {
 }
 
 
-.flex-grid{
-	display: flex;
-	justify-content: center;
-}
-.col {
-	flex: 1;
+.flex-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-img{
-	padding: 10px;
+.col {
+    flex: 1;
+}
+
+img {
+    padding: 10px;
 }
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */
@@ -31,10 +33,10 @@ img{
     width: 100%
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .page-body {
-    padding-top: 40px;
-}
+    /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+    .sticky + .page-body {
+        padding-top: 40px;
+    }
 
 /******************************************************************
 	Wrapper
@@ -50,28 +52,25 @@ img{
     background-size: cover;
 }
 
-.main h1, h2, h3 {
-    padding: 0 20px;
-    font-family: Helvetica, Arial, sans-serif;
-    color: #95b43b;
-    text-shadow: 0px 0px 15px rgba(64,63,60,1);
-    /*background: rgba(64,63,60,0.5);
-    border: 3px;
-    border-radius: 5px;*/
-}
+    .main h1, h2, h3 {
+        padding: 0 20px;
+        font-family: Helvetica, Arial, sans-serif;
+        color: #95b43b;
+        text-shadow: 0px 0px 15px rgba(64,63,60,1);
+    }
 
-.main p {
-    margin: 5px 0px;
-    padding: 5px 20px;
-    font: 16px/1.5 Helvetica, Arial, sans-serif;
-    color: lightgray;
-}
+    .main p {
+        margin: 5px 0px;
+        padding: 5px 20px;
+        font: 16px/1.5 Helvetica, Arial, sans-serif;
+        color: lightgray;
+    }
 
-.main a {
-    font: 16px/1.5 Helvetica, Arial, sans-serif;
-    text-decoration:none!important;
-    color: lightskyblue;
-}
+    .main a {
+        font: 16px/1.5 Helvetica, Arial, sans-serif;
+        text-decoration: none;
+        color: lightskyblue;
+    }
 
 
 /******************************************************************
@@ -86,18 +85,18 @@ img{
     background: linear-gradient(to right, rgba(64,63,60,0) 25%, rgba(64,63,60,1) 35%, rgba(64,63,60,1) 65%, rgba(64,63,60,0) 75% );
 }
 
-.page-header img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
+    .page-header img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
 
-.page-header h1 {
-    text-align: center;
-    font: 70px 'Orbitron', sans-serif;
-    padding: 0px 0px 0px 0px;
-}
+    .page-header h1 {
+        text-align: center;
+        font: 70px 'Orbitron', sans-serif;
+        padding: 0px 0px 0px 0px;
+    }
 
 /******************************************************************
 	Menu Div
@@ -110,11 +109,12 @@ img{
     /*background-color: #403f3c;*/
     background: linear-gradient(to right, rgba(64,63,60,0) 25%, rgba(64,63,60,1) 35%, rgba(64,63,60,1) 65%, rgba(64,63,60,0) 75% );
 }
-.page-menu a {
-    font: 16px/1.5 Orbitron, Helvetica, Arial, sans-serif;
-    text-decoration: none !important;
-    color: #95b43b;
-}
+
+    .page-menu a {
+        font: 16px/1.5 Orbitron, Helvetica, Arial, sans-serif;
+        text-decoration: none !important;
+        color: #95b43b;
+    }
 
 /******************************************************************
 	Menu Bar
@@ -125,11 +125,12 @@ img{
     color: inherit;
     position: relative;
 }
-.menu-bar .menu-btn:hover {
-    background-color: #696863;
-    border-bottom: 1px solid #95b43b;
-    box-shadow: 0px 8px 15px -8px rgba(149, 180, 59,0.9);
-}
+
+    .menu-bar .menu-btn:hover {
+        background-color: #696863;
+        border-bottom: 1px solid #95b43b;
+        box-shadow: 0px 8px 15px -8px rgba(149, 180, 59,0.9);
+    }
 
 /******************************************************************
 	Menu Buttons
@@ -150,16 +151,15 @@ img{
     border-radius: 10px;
 }
 
-.menu-btn:hover a {
-    color: #bad764;
-}
+    .menu-btn:hover a {
+        color: #bad764;
+    }
 
 
 /******************************************************************
 	Menu Dropdown
 ******************************************************************/
 .dropdown {
-
 }
 
 .dropdown-content {
@@ -170,18 +170,18 @@ img{
     box-shadow: 0px 8px 16px -2px rgba(149, 180, 59,0.9);
 }
 
-.dropdown-content a {
-    color: #95b43b;
-    background-color: #403f3c;
-    padding: 8px 16px;
-    text-decoration: none;
-    display: block;
-}
+    .dropdown-content a {
+        color: #95b43b;
+        background-color: #403f3c;
+        padding: 8px 16px;
+        text-decoration: none;
+        display: block;
+    }
 
-.dropdown-content a:hover {
-    color: #95b43b;
-    background-color: #696863;
-}
+        .dropdown-content a:hover {
+            color: #95b43b;
+            background-color: #696863;
+        }
 
 .menu-btn.dropdown:hover .dropdown-content {
     display: block;
@@ -191,39 +191,52 @@ img{
 	Page Body 
 ******************************************************************/
 .page-body {
-    width: 50%;
+    max-width: 860px;
     min-height: 65vh;
     min-width: 300px;
     margin: 0 auto 30px auto;
 }
 
-.page-body p {
-    background: rgba(64,63,60,0.7);
-    border: 3px;
-    border-radius: 10px;
-}
+    .page-body p {
+        background: rgba(64,63,60,0.7);
+        border: 3px;
+        border-radius: 10px;
+    }
 
-.page-body .div-list {
-    margin: 5px 0px;
-    padding: 5px 0px 5px 20px;
-    font: 16px/1.5 Helvetica, Arial, sans-serif;
-    color: lightgray;
-    background: rgba(64,63,60,0.5);
-    border: 3px;
-    border-radius: 10px;
-}
+    .page-body .div-list {
+        margin: 5px 0px;
+        padding: 5px 0px 5px 20px;
+        font: 16px/1.5 Helvetica, Arial, sans-serif;
+        color: lightgray;
+        background: rgba(64,63,60,0.5);
+        border: 3px;
+        border-radius: 10px;
+    }
 
-.page-body ul {
-    margin: 0px;
-}
+    .page-body ul {
+        margin: 0px;
+    }
 
-.page-body .div-list p {
-    margin: 0px 0px;
-    padding: 0px 0px;
-    font: 16px/1.5 Helvetica, Arial, sans-serif;
-    color: lightgray;
-    background: none;
-}
+    .page-body .div-list p {
+        margin: 0px 0px;
+        padding: 0px 0px;
+        font: 16px/1.5 Helvetica, Arial, sans-serif;
+        color: lightgray;
+        background: none;
+    }
+
+    .page-body .img-link {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .page-body .video {
+        width: 85vw;
+        height: 58vw;
+        max-width: 650px;
+        max-height: 365px;
+    }
 
 /******************************************************************
 	Page Footer Paragraphs
@@ -234,23 +247,23 @@ img{
     padding-bottom: 20px;
 }
 
-.page-footer p {
-    text-align: center;
-    padding: 0 10px;
-    font: 13px/1.5 Helvetica, Arial, sans-serif;
-    color: #95b43b;
-}
+    .page-footer p {
+        text-align: center;
+        padding: 0 10px;
+        font: 13px/1.5 Helvetica, Arial, sans-serif;
+        color: #95b43b;
+    }
 
-.page-footer a {
-    font: 13px/1.5 Helvetica, Arial, sans-serif;
-    color: #95b43b;
-}
+    .page-footer a {
+        font: 13px/1.5 Helvetica, Arial, sans-serif;
+        color: #95b43b;
+    }
 
 /******************************************************************
 	FORM
 ******************************************************************/
- 
- /* Style inputs with type="text", select elements and textareas */
+
+/* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     width: 100%; /* Full width */
     padding: 10px; /* Some padding */
@@ -274,35 +287,30 @@ input[type=submit] {
     font-size: 18px;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-    background-color: #696863;
-    border-bottom: 1px solid #95b43b;
-    box-shadow: 0px 8px 15px -8px rgba(149, 180, 59,0.9);
-    color: #bad764;
-}
+    /* When moving the mouse over the submit button, add a darker green color */
+    input[type=submit]:hover {
+        background-color: #696863;
+        border-bottom: 1px solid #95b43b;
+        box-shadow: 0px 8px 15px -8px rgba(149, 180, 59,0.9);
+        color: #bad764;
+    }
 
 /* Add a background color and some padding around the form */
 .container {
-    padding: 0px 20px 0px 20px; 
-}
-.container label {
-    display: block;
-    height: 25px;
-    width: 100px;
-    background: rgba(64,63,60,0.7);
-    border: 3px;
-    border-radius: 4px;
-    text-align: left;
-    font: 18px/25px Helvetica, Arial, sans-serif;
-    color: lightgray;
-    margin: 0;
-    padding: 5px 10px;
-    position: inherit;
+    padding: 0px 20px 0px 20px;
 }
 
-
-
-
-
-
+    .container label {
+        display: block;
+        height: 25px;
+        width: 100px;
+        background: rgba(64,63,60,0.7);
+        border: 3px;
+        border-radius: 4px;
+        text-align: left;
+        font: 18px/25px Helvetica, Arial, sans-serif;
+        color: lightgray;
+        margin: 0;
+        padding: 5px 10px;
+        position: inherit;
+    }
