@@ -28,9 +28,9 @@ img {
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
-    position: fixed;
+    /* position: fixed;
     top: 0;
-    width: 100%
+    width: 100% */
 }
 
     /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
@@ -102,12 +102,21 @@ img {
 	Menu Div
 ******************************************************************/
 .page-menu {
-    width: 100%;
-    padding: 5px 0px 5px 0px;
-    margin: auto;
+    width: 50px;
+    padding: 0;
+    margin-left: auto;
     text-align: center;
     /*background-color: #403f3c;*/
     background: linear-gradient(to right, rgba(64,63,60,0) 25%, rgba(64,63,60,1) 35%, rgba(64,63,60,1) 65%, rgba(64,63,60,0) 75% );
+}
+
+.page-menu .menu-logo {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    position: fixed;
+    top: 10px;
+    right: 10px;
 }
 
     .page-menu a {
