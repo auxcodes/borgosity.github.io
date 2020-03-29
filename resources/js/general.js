@@ -8,7 +8,7 @@ $(document).ready(function(){
 	$("#menu").load("templates/menu.html"); 
 	$("#parentmenu").load("../../templates/menu.html"); 
 	
-// // sticky menu
+// sticky menu
 	// Get the header
 	var header = document.getElementById("header");
     if (header != null)

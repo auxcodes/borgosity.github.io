@@ -77,7 +77,9 @@ img {
 	Page Header Paragraphs
 ******************************************************************/
 .page-header {
+    display: flex;
     width: 100%;
+    height: 100%;
     min-height: 100px;
     /*max-height: 100px;*/
     margin: auto;
@@ -85,18 +87,38 @@ img {
     background: linear-gradient(to right, rgba(64,63,60,0) 25%, rgba(64,63,60,1) 35%, rgba(64,63,60,1) 65%, rgba(64,63,60,0) 75% );
 }
 
-    .page-header img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
+    .page-header .header-content {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
     }
 
-    .page-header h1 {
-        text-align: center;
-        font: 70px 'Orbitron', sans-serif;
-        padding: 0px 0px 0px 0px;
+    .page-header .header-content .header-link{
+        display: flex;
+        padding: 0;
+        margin: 0 auto;  
+        height: 15vh;      
     }
+    .page-header .header-content .header-link svg{
+        display: flex;
+        margin: 0 auto;
+        width: 85%;
+    }
+    .page-header .header-content .header-link text{
+        fill: #95b43b;
+        font-family: 'Orbitron', sans-serif;        
+        font-size: 193px;
+        text-align: center;
+    }
+
+
+        .header-content img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
 
 /******************************************************************
 	Menu Div
@@ -281,7 +303,7 @@ img {
 
     .page-footer .copyright .logo {
         display: block;
-        background-image: url('../icons/webdevphill_logo.svg');
+        background-image: url('../images/logos/webdevphill_logo.svg');
         background-size: 100%;
         background-repeat: no-repeat;
         margin: 2px 0 0 2px;
