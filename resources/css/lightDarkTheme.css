@@ -97,7 +97,9 @@ img {
         display: flex;
         padding: 0;
         margin: 0 auto;  
-        height: 15vh;      
+        height: 26vh;
+        max-height: 685px; 
+        width: 100%;    
     }
     .page-header .header-content .header-link svg{
         display: flex;
