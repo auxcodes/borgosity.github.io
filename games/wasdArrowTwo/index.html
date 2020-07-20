@@ -8,13 +8,13 @@
                     key combinations for two keys instead of four to win.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Start borgosity header stuff -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="../../resources/js/general.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../../resources/js/general.js"></script>
     <link rel="stylesheet" href="../../resources/css/lightDarkTheme.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
     <!-- End borgosity header stuff -->
     <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>
+    <script type="text/javascript" src="TemplateData/UnityProgress.js"></script>
     <!--favicons-->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -27,10 +27,8 @@
   <body class="template">
 <!-- Start borgosity body stuff -->
       <div class="main">
-          <div class="page-header">
-              <a href="../../index.html"><img id="headerImg" src="../../resources/images/TitleTight_ExtraLarge_Tranparent.png" /></a>
-          </div>
-          <div id="parentmenu" class="page-menu"></div>
+        <div id="header" class="page-header"></div>
+        <div id="menu" class="page-menu"></div>
           <!-- End borgosity body stuff -->
           <p class="header"><span>Unity WebGL Player | </span>WASD Two Key Microgame</p>
           <div class="page-body clear">
@@ -53,7 +51,7 @@
               </script>
               <script src="Release/UnityLoader.js"></script>
           </div>
-          <div id="parentfooter" class="page-footer">
+          <div id="footer" class="page-footer">
           </div>
 </body>
 </html>

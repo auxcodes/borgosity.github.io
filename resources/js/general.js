@@ -1,12 +1,9 @@
 
 $(document).ready(function(){
 // page templates
-	$("#header").load("templates/header.html"); 
-	$("#parentheader").load("../../templates/header.html"); 
-	$("#footer").load("templates/footer.html");
-	$("#parentfooter").load("../../templates/footer.html"); 
-	$("#menu").load("templates/menu.html"); 
-	$("#parentmenu").load("../../templates/menu.html"); 
+	$("#header").load("/templates/header.html"); 
+	$("#footer").load("/templates/footer.html");
+	$("#menu").load("/templates/menu.html"); 
 	
 // sticky menu
 	// Get the header
