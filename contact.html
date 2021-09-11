@@ -37,7 +37,25 @@
             <div class="page-body">
                 <h2>Contact Me!</h2>
                 <div class="container">
-                    <form action="https://formspree.io/borgosity+formspree@gmail.com" method="post">
+
+                    <form name="contact" method="POST" data-netlify="true">
+                        <p>
+                          <label class="form-label" for="name">Name:</label>
+                          <input type="text" id="name" name="name" />
+                        </p>
+                        <p>
+                          <label class="form" for="email">Email:</label>
+                          <input type="text" id="email" name="email" />
+                        </p>
+                        <p>
+                          <label class="form" for="message">Message:</label>
+                          <textarea id="message" name="message" style="height:200px"></textarea>
+                        </p>
+                        <p>
+                          <button type="submit">Send</button>
+                        </p>
+                      </form>
+                                        <!-- <form action="https://formspree.io/borgosity+formspree@gmail.com" method="post">
 
                         <label class="form-label" for="fname">Name:</label>
                         <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -50,7 +68,7 @@
 
                         <input type="submit" value="Submit">
 
-                    </form>
+                    </form> -->
                 </div>
             </div>
 
